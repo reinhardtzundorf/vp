@@ -1,0 +1,72 @@
+## ====================================================================================== ##
+#	Change Log 																			   #
+#	Volunteers Portal																	   #
+## -------------------------------------------------------------------------------------- ##
+
+   14/03/2017
+ ---------------------------------------------------------------------------------------
+
+	1.  Rewrote 'index.php' & added comments for each section as well as comment dividers.
+
+	2.  Rewrote 'conf.php' to reflect the new DB and structural changes that were made to 
+		the entire CMS.
+
+	3.	New directory structure:
+	
+			Root
+		------------
+		  /vp/								'project root'
+
+		  	Folder Categories
+		  ---------------------
+		     ./archive		    			'old files (eventually to be deleted)'
+		     ./classes		    			'classes for as per the DB tables'
+		     ./conf		    				'configuration & setup files'
+		     ./modules		    			'lists, views, edit, delete & other functions'
+
+		     	Modules 
+		     -------------
+		             ../admin 				''
+		             ../applicant 		    ''      
+		             ../dashboard 			''
+		             ../db  				''
+		             ../helpers 			''
+		             ../layout 				''
+		             ../list 				''	
+		             ../login 				''
+		             ../mailer  			''
+		             ../profile  			''
+		             ../view   				''
+		             ../volunteer    		''	
+
+	      Components (cont.)
+	    ----------------------
+		  ./../res								'graphics, images, JS & CSS files'
+
+    4.	Create 'changeLog.txt'
+
+
+---------------------------------------------------------------------------------------
+  15/03/2017
+---------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -------------------------------------------------------------------------------------

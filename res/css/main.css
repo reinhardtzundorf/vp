@@ -1,0 +1,885 @@
+/** --------------------------------------------------------------------------- *
+ * Aqua Skills Swim School Online                                               *
+ * --------------------------------------------------------------------------- **
+ * Filename         main.css                                                    *
+ * Version          1.2                                                         *
+ * Date             30/11/2016                 Updated:    20/12/2016           *
+ * Webmaster        Web Folders (Pty) Ltd                                       *
+ * Owner            Reinhardt H Zŭndorf                                         *
+ * Website          http://www.aquaskills.co.za/                                *
+ * --------------------------------------------------------------------------- **/
+
+/** --------------------------------------------------------------------------- *
+ * IMPORTS (fonts, split CSS fragments, etc.)                                   *
+ * --------------------------------------------------------------------------- **/
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt|Questrial');
+
+/** --------------------------------------------------------------------------- *
+ * COLOUR SCHEME                                                                *
+ * Updated         05/12/2016                                                   *
+ * --------------------------------------------------------------------------- **
+ * #202020                  Very dark gray                                      *
+ * #e3e7ed                  Light grayish blue                                  *
+ * #5c729b                  Mostly desaturated dark blue                        *
+ * #404f6b                  Very dark desaturated blue                          *
+ * #b4bfd0  (or #b5bfd1)    Grayish blue                                        *
+ * #8d4b25                  Dark orange (brown tone)                            *
+ * #ddbC7f  (Compl.)        Very soft orange                                    *
+ * #ba1108                  Strong red                                          *
+ * --------------------------------------------------------------------------- **/
+
+/** --------------------------------------------------------------------------- *
+ * GENERAL CSS                                                                  *
+ * Desc    Formatting for HTML, body & other containers.                        *
+ * Update  05/12/2016                                                           *
+ * --------------------------------------------------------------------------- **/
+html, body
+{ 
+    overflow-y: scroll; 
+    height: 100%; 
+}
+
+body
+{
+    background:     #ffffff;
+    color:          #404f6b;
+    font-size:      14pt;
+    font-family:    Questrial, sans-serif;
+    line-height:    1.429;
+    text-align:     center;
+}
+
+.well 
+{
+    border-color:   transparent;
+}
+
+.v-center 
+{
+    padding-top: 4%;
+}
+
+#aqs-logo
+{
+    background-color:   white;
+}
+
+/** --------------------------------------------------------------------------- *
+ * SECTION(S)                                                                   *
+ * Last Update:     13/12/2016                                                  *
+ * --------------------------------------------------------------------------- **/
+section 
+{
+    background-color:   #e3e7ed ;
+    min-height:         200px;
+    padding:            40px;
+    font-family:        Questrial, sans-serif;
+}
+
+section h1 
+{
+    font-family:        Questrial, sans-serif;
+    color:              #404f6b;
+    line-height:        24px;
+}
+
+section p
+{
+    font-size:          12pt;
+    color:              black;
+}
+
+/** ----------------------------------------------------------------------- *
+ *  Home - 'About'                                                          *
+ * ----------------------------------------------------------------------- **/
+#aqs-home-about 
+{
+    background-image:   url('../res/bg/aboutPool_2.png') ;
+    padding:            15px;
+}
+
+#aqs-home-about h1
+{
+    font-size:          32pt;
+    color:              #202020;
+    font-weight:        600;
+    margin:             40px;
+}
+
+#aqs-home-about p
+{
+    font-size:          20pt;    
+    color:              #404f6b;
+    padding:            20px;
+    margin-left:        12.5%;
+    margin-right:       12.5%;
+}
+
+#aqs-home-about button
+{
+    background-color:   #b5bfd1;
+    font-size:          14pt;
+    color:              #ffffff;
+    margin-top:         5px;
+    margin-bottom:      15px;
+}
+
+#aqs-home-about button a
+{
+	text-decoration: 	none;
+	color:				#ffffff;
+}
+
+#aqs-home-services
+{
+    background-color:   #ffffff;
+}
+
+#aqs-home-services h3
+{
+    font-family:        Questrial, sans-serif;
+    font-size:          18pt;
+    color:              #000000;
+}
+
+#aqs-home-services p
+{
+    font-family:        Questrial, sans-serif;
+    font-size:          20pt;
+    color:              #5c729b;
+
+}
+
+#aqs-home-services img 
+{
+    width:  75px;
+    height: 75px;
+}
+
+/** ----------------------------------------------------------------------- *
+ *  Services                                                                *
+ * ----------------------------------------------------------------------- **/
+.aqs-services-intro
+{
+    background-image:   url('../res/bg/aqs-pool-bg-1.png');   
+}
+
+.aqs-services-content 
+{
+    background-color:   #ffffff;
+}
+
+.aqs-offer-intro 
+{
+    padding:            4%;
+}
+
+.aqs-offer-content 
+{
+    background-color:   #ffffff;
+    padding:            0px;
+    
+}
+
+.aqs-offer-menu 
+{
+    background-color:   #e3e7ed;
+    margin:             0px;
+    padding:            0px;
+}
+
+.aqs-offer-menu a
+{
+    margin:             0px;
+    padding:            0px;
+}
+
+
+.aqs-offer-content h1
+{
+    
+}
+
+.aqs-offer-content ul 
+{
+    width:              80%;
+    text-align:         left;
+    padding:            40px;
+}
+
+.aqs-offer-content li 
+{
+    font-family:        Questrial, sans-serif;
+    font-size:          20pt;    
+    color:              #404f6b;
+    margin:             15px;
+}
+
+.aqs-offer-content p 
+{
+    font-family:        Questrial, sans-serif;
+    font-size:          20pt;    
+    color:              #404f6b;
+    margin:             50px;
+}
+
+/** ----------------------------------------------------------------------- *
+ *  Testimonials                                                            *
+ *  NB: Carousel is configure in '../css/carousel.css' 		            *
+ * ----------------------------------------------------------------------- **/
+.aqs-testimonials-intro
+{
+
+}
+
+.aqs-testimonials-intro h1
+{
+    font-family:        Rock Salt, cursive;
+    font-size:	        26pt;
+    font-weight:        bold;
+}
+
+.aqs-testimonials-content
+{
+    padding-left:       75px;
+    padding-right:	75px;
+    background-color:   #ffffff;    
+}
+
+/** ----------------------------------------------------------------------- *
+ *  Responsible Resizing                                                    *
+ * ----------------------------------------------------------------------- **/
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) 
+{
+    section
+    {
+        padding-top:    5px;
+        padding-bottom: 10px;
+        min-height:     200px;
+    }
+
+    section p
+    {
+        font-size:      10pt;
+    }
+
+    #aqs-home-about
+    {
+        padding-left:   10px;
+        padding-right:  10px;
+    }
+
+    #aqs-services
+    {
+        height:         200px;
+        padding:        1.5%;
+    }
+
+    .footer 
+    {
+        padding: 5px;
+    }
+
+    .footer h1 
+    { 
+        font-size:              14pt;
+        font-weight:            500;
+        color:                  black;
+    }
+
+    .footer p
+    {
+        font-size:              12pt;
+        color:                  white;
+    }
+
+    .footer a
+    {
+        text-align:             left;
+        font-size:              11pt;
+        color:                  white;
+        text-decoration:        none;
+    }
+
+    .footer-social ul 
+    {
+        padding-left: 0px;
+    }
+
+    .footer-social ul li 
+    {    
+        list-style: none outside none;
+        display: inline-block;
+    }
+
+    .footer-social i 
+    {
+        width: 60px;
+        height: 60px;
+        color: #FFF;
+        background-color: #909AA0;  
+        font-size: 22px;
+        text-align: center;
+        padding-top: 12px;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: all ease 0.3s;
+        -moz-transition: all ease 0.3s;
+        -webkit-transition: all ease 0.3s;
+        -o-transition: all ease 0.3s;
+        -ms-transition: all ease 0.3s;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
+
+/** ----------------------------------------------------------------------- *
+ *  Headings                                                                *
+ * ----------------------------------------------------------------------- **/
+h2 
+{
+    font-size: 22px; 
+}
+
+h3 
+{
+    font-weight:    bold;
+    font-size:      18px; 
+} 
+
+h4 
+{ 
+    font-size: 1.286em 
+} 
+
+h5 
+{ 
+    font-size: 1.143em 
+}
+
+h6 
+{ 
+    font-size: 1em 
+} 
+
+h2, h3, h4 
+{
+    line-height: 1.1;
+    margin-bottom: .75em;
+}
+
+/* Anchors
+--------------------------------------------------------------------------- */
+a 
+{ 
+    outline: 0; 
+}
+a img 
+{
+    border: 0px; text-decoration: none;
+}
+a:link, a:visited 
+{
+    text-decoration: underline;
+}
+
+a:hover, a:active 
+{
+    color: #fff;
+    text-decoration: none;
+    /*text-shadow: 1px 1px 1px ;*/
+}
+
+/* Paragraphs & Text
+--------------------------------------------------------------------------- */
+strong, b	
+{ 
+	font-weight: bold; 
+}
+
+em, i
+{
+	font-style: italic; 
+}
+
+::-moz-selection 
+{ 
+	background: #F6CF74; color: #fff; 
+}
+
+::selection   
+{ 
+	background: #F6CF74; color: #fff; 
+}
+
+
+/** ----------------------------------------------------------------------- *
+ * Navigation 'navbar-trans'                                                *
+ * ----------------------------------------------------------------------- **
+ *  Desc    Bootstrap. Transparent navigation bar, custom CSSS style.       *
+ *  Parent  Aqua Skills Version 2.0                                         *
+ *  Update  30 Nov 2016                                                     *
+ * ----------------------------------------------------------------------- **/
+.aqs-navbar-trans 
+{
+    margin-top:         15px;
+    margin-bottom:      0px;
+    background-color:   #5c729b;
+    color:              #5c729b;
+    border-bottom:      6px solid #ddbC7f;
+}
+
+.aqs-navbar-trans li>a:hover, .aqs-navbar-trans li>a:focus, .aqs-navbar-trans li.active 
+{
+    background-color:   #B4BFD0;
+}
+
+.aqs-navbar-trans a
+{
+    font-size:          10pt;
+    text-decoration:    none;
+    text-transform:     uppercase;
+    color:              #fefefe;
+}
+
+/* Search Form Control CSS: aqs-navbar-trans */ 
+.aqs-navbar-trans .form-control:focus 
+{
+    border-color: #eee;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(100,100,100,0.6);
+}
+
+/** ----------------------------------------------------------------------- *
+ *  Contact                                                                 *
+ * ----------------------------------------------------------------------- **/
+.aqs-contact-intro
+{
+    background-image:   url('../res/bg/aqs-pool-bg-2.png');
+}
+
+.aqs-contact-details
+{
+    background-color:   #ffffff;
+}
+
+.aqs-contact-content
+{
+    padding:            0px;
+    margin:             0px;
+    color:              black;
+}
+
+.aqs-contact-content h3
+{
+    font-size:          18pt;
+}
+
+.aqs-contact-content p
+{
+    color:                #404f6b;
+}
+
+.aqs-contact-content ul
+{
+    list-style:           none;
+    font-family:          Questrial, sans-serif;
+    font-size:            16pt;
+}
+
+.aqs-contact-content li 
+{
+    line-height:         1.8em;
+}
+
+.aqs-contact-content li:first-child
+{
+    margin-top:          20px;
+    line-height:         2.6em;
+    font-weight:         bold;
+    font-size:           18pt;
+    color:               black;
+
+}
+
+.aqs-contact-content li:last-child 
+{
+    margin-bottom:      40px;
+}
+
+.aqs-contact-content li:last-of-type 
+{
+    margin-top:         20px;
+}
+
+/** ----------------------------------------------------------------------- *
+ *  About Us                                                                *
+ * ----------------------------------------------------------------------- **/
+.aqs-about-intro
+{
+    background-image:   url('../res/bg/aqs-pool-bg-2.png');
+}
+
+.aqs-about-intro h1 
+{    
+    font-family:        Questrial, sans-serif;
+    font-size:		32pt;
+    color:		#5c729b;
+}
+
+.aqs-about-content 
+{
+    background-color:   #ffffff;
+}
+
+
+.aqs-about-content p 
+{
+    font-family:        Questrial, sans-serif;
+    font-size:          20pt;    
+    color:              #404f6b;
+    padding:            20px;
+    padding-bottom:     10px;
+    margin-left:        12.5%;
+    margin-right:       12.5%;
+}
+
+.aqs-about-content p:after
+{
+    margin-bottom:      30px;
+}
+
+.aqs-about-content p:last-of-type
+{
+    margin-bottom:      0px;
+}
+
+.aqs-about-pool
+{
+    background-color:   #5c729b;
+}
+
+.aqs-about-pool p
+{
+    font-family:        Questrial, sans-serif;
+    font-size:          20pt;    
+    color:              white;
+    margin-left:        12.5%;
+    margin-right:       12.5%;
+    padding-top:        20px;
+    padding-bottom:     20px;
+}
+
+
+/** ----------------------------------------------------------------------- *
+ *  Footer                                                                  *
+ * ----------------------------------------------------------------------- **/
+.footer 
+{
+    background-color:       #5c729b;
+    font-size:              10pt;    
+    font-style:             Questrial, sans-serif;
+}
+
+.footer .col-lg-4
+{
+    padding-left:           40px;
+    padding-right:          40px;
+}
+
+.footer h1 
+{ 
+    font-size:              14pt;
+    font-weight:            bold;
+    color:                  black;
+    text-transform:         uppercase;
+    margin:                 15px;
+    margin-top:             30px;
+    margin-bottom:          35px;
+}
+
+.footer h2, .footer a
+{
+    font-size:              12pt;
+    font-weight:            bold;
+    color:                  black;
+}
+
+.footer p
+{
+    font-size:              12pt;
+    color:                  white;
+}
+
+.footer a
+{
+    text-align:             left;
+    font-size:              12pt;
+    color:                  white;
+    text-decoration:        none;
+}
+
+.footer-social ul 
+{
+    padding-left: 0px;
+}
+
+.footer-social ul li 
+{    
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.footer-social i 
+{
+    width: 				45px;
+    height: 			45px;
+    color: 				#FFF;
+    background-color: 	#909AA0;  
+    font-size: 22px;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+.footer-social i:hover 
+{
+    color: #FFF;
+    text-decoration: none;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.footer-social .fa-facebook:hover 
+{ 
+    background: #4060A5;
+
+}
+
+.footer-social .fa-twitter:hover 
+{ 
+    background: #00ABE3;
+}
+
+.footer-social .fa-google-plus:hover 
+{ 
+    background: #e64522;
+}
+
+.footer-links { }
+
+.footer-links ul
+{
+    text-align:     center;
+    list-style:     none;
+    margin-left:    0px;
+    margin-bottom:  20px;
+}
+
+.footer-links a
+{
+    font-weight:    normal;
+}
+
+.footer-contact
+{
+    list-style:  none;
+    text-align:  left;
+    color:       white;
+}
+
+.footer-contact ul 
+{
+	padding-left: 	0px;
+}
+
+.footer-contact p
+{
+	padding-left:	30px;
+}
+
+.footer-contact i
+{
+	padding-right:	15px;
+}
+
+.footer-address
+{
+    list-style:     none;
+    text-align:     right;
+    color:          #ffffff;
+    font-size:      12pt;
+	padding-left:	0px;
+	margin-left:	0px;
+}
+
+#footer-address-h1 h1,
+{
+	font-size:		14pt;
+	font-weight:	bold;
+}
+
+.footer-address li:first-of-type i
+{
+	margin-right: 20px;
+}
+
+.footer-address li
+{
+	padding-left: 25px;
+}
+
+.footer-end
+{
+    background-color:   #404f6b;
+    min-height:         45px;
+}
+
+.footer-end .row
+{
+    margin-top:         15px;
+    margin-bottom:      10px;
+}
+
+.footer-end a
+{
+    font-size:          12pt;
+    font-weight:        400;
+    color:              #ffffff;
+    margin:             12px;
+    line-height:        1.1;
+}
+
+.footer-end a:first-of-type
+{
+    margin-left:        0px;
+}
+
+.footer-end a:last-of-type
+{
+    margin-right:        0px;
+}
+
+.footer-end-copy a
+{
+    font-weight:        bold;
+}
+
+/* Schedules & Rates Specific styling
+--------------------------------------------------------------------------- */
+#scheduleAndRates {
+    border:         none;
+    width:          1200px;      
+    line-height:    16px;
+    text-align:     center;
+}	
+#scheduleAndRates td {
+    padding: 10px 15px;
+}
+#scheduleAndRates th {
+    background: #c1c9d9;
+    border: 0px;
+    border-bottom: 6px solid #5c729b;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 12px 0px;
+    position: relative;
+    text-align: center;
+}
+#scheduleAndRates th:after {
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+    display: block;
+    height: 25%;
+    margin: 1px 0 0 0;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+}
+#scheduleAndRates td {
+    padding: 10px 15px;
+    position: relative;
+    transition: all 100ms;
+    border: none;
+}
+#scheduleAndRates td:first-child {
+    box-shadow: inset 1px 0 0 #fff;
+}	
+#scheduleAndRates td:last-child {
+    box-shadow: inset -1px 0 0 #fff;
+}	
+#scheduleAndRates tr:nth-child(odd) td {
+    background: #f1f1f1; 
+}
+#scheduleAndRates tr:last-of-type td {
+    transition: none;
+    box-shadow: inset 0 -1px 0 #fff; 
+}
+#scheduleAndRates tr:last-of-type td:first-child {
+    box-shadow: inset 1px -1px 0 #fff;
+}	
+#scheduleAndRates tr:last-of-type td:last-child {
+    box-shadow: inset -1px -1px 0 #fff;
+}	
+#scheduleAndRates tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 3px #aaa;
+}
+#scheduleAndRates tbody:hover tr:hover td {
+    color: #444;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.wrapper 
+{
+    width: 100%;
+    background-color: white;
+}
+
+@media (min-width: 1350px)
+{
+    .wrapper 
+    {
+        left:             50px;                
+        right:            50px;     
+        border-left:      5px solid black;
+        border-right:     5px solid black;        
+    }
+}
+
+.aqs-rates-intro 
+{
+    background:         url('../res/bg/aqs-pool-bg-1.png');
+}
+
+.aqs-rates-intro h1
+{
+    font-size:          32pt;
+    color:              #000000;
+    padding:            3%
+}
+
+.aqs-rates-program 
+{
+    background-color:   #ffffff;
+}
+
+.iframeclass
+{
+}
+
+
